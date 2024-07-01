@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="267dp"
+        android:layout_height="296dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/undraw_compose_music_re_wpiw"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:outlineAmbientShadowColor="#9446AC"
+        android:layout_marginStart="30dp"
+        android:id="@+id/musicSeekBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <ImageView
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_play_circle_24"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_pause_circle_24"/>
+        <ImageView
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_stop_circle_24"/>
+    </LinearLayout>
+
+
+</LinearLayout>
